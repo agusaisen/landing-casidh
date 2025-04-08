@@ -1,4 +1,6 @@
+
 document.addEventListener('DOMContentLoaded', function () {
+
     // Mobile menu toggle
     const mobileMenuButton = document.querySelector('.mobile-menu-button');
     const mobileMenu = document.querySelector('.mobile-menu');
@@ -52,6 +54,17 @@ document.addEventListener('DOMContentLoaded', function () {
     // Set current year in footer
     document.getElementById('currentYear').textContent = new Date().getFullYear();
 });
+
+function updateBannerImage() {
+    var img = document.getElementById("banner-img");
+    if (window.innerWidth <= 768) {
+        img.src = "./images/banner/banner_mb.webp";
+    } else {
+        img.src = "./images/banner/banner.webp";
+    }
+}
+updateBannerImage();
+window.addEventListener("resize", updateBannerImage);
 
 async function enviarFormulario(event) {
     event.preventDefault(); // Evitar recargar la página
