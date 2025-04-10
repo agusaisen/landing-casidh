@@ -1,6 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
+ 
     // Mobile menu toggle
     const mobileMenuButton = document.querySelector('.mobile-menu-button');
     const mobileMenu = document.querySelector('.mobile-menu');
@@ -33,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Smooth scrolling for all internal links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    /*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
 
@@ -50,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             }
         });
-    });
+    });*/
     // Set current year in footer
     document.getElementById('currentYear').textContent = new Date().getFullYear();
 });
