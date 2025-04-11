@@ -59,10 +59,16 @@ a {
 ul {
     list-style: none;
 }
+.container-header{
+    width: 100%;
+    
+    margin: 0 auto;
+    padding: 0 1rem;
+}
 
 .container {
     width: 100%;
-    
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -873,6 +879,9 @@ ul {
 
         font-size: 1rem;
     }
+    .container-header{
+        width: 95%;
+    }
 
    
 
@@ -895,7 +904,9 @@ ul {
     .help-buttons {
         flex-direction: row;
     }
-
+    .container-header{
+        width: 95%;
+    }
 }
 
 @media (min-width: 768px) {
