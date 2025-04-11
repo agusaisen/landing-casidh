@@ -22,8 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Host = "smtp.gmail.com";
         $mail->Port = 587; // or 587
         $mail->IsHTML(true);
-        $mail->Username = 'mailercasi@gmail.com'; // Tu correo para autenticación SMTP
-        $mail->Password = 'euit hmvi xfcb mpnd'; // Contraseña de tu correo
+        $mail->Username = '***@gmail.com'; // Tu correo para autenticación SMTP
+        $mail->Password = '***' // Contraseña de tu correo
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         // Configuración del remitente y destinatario
         $mail->setFrom('noreply@casidh.com.ar', 'CASI DH'); // Usa el correo del usuario como remitente
