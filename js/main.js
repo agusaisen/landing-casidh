@@ -57,11 +57,17 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function updateBannerImage() {
+    var logo_header= document.getElementById("logo_header");
+    var logo_footer= document.getElementById("logo_footer");
     var img = document.getElementById("banner-img");
     if (window.innerWidth <= 768) {
         img.src = "./images/banner/banner_mb.webp";
+        logo_header.src = "./images/sponsors/cpdh.png";
+        logo_footer.src = "./images/sponsors/cpdh.png";
     } else {
         img.src = "./images/banner/banner.webp";
+        logo_header.src = "./images/sponsors/logoCPDH.png";
+        logo_footer.src = "./images/sponsors/logoCPDH.png";
     }
 }
 updateBannerImage();
