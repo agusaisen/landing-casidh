@@ -19,15 +19,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->SMTPDebug = 0; // debugging: 1 = errors and messages, 2 = messages only
         $mail->SMTPAuth = true; // authentication enabled
         $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
-        $mail->Host = "smtp.gmail.com";
+        $mail->Host = "******";
         $mail->Port = 587; // or 587
         $mail->IsHTML(true);
-        $mail->Username = '***@gmail.com'; // Tu correo para autenticación SMTP
+        $mail->Username = '*******'; // Tu correo para autenticación SMTP
         $mail->Password = '***' // Contraseña de tu correo
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         // Configuración del remitente y destinatario
-        $mail->setFrom('noreply@casidh.com.ar', 'CASI DH'); // Usa el correo del usuario como remitente
-        $mail->addAddress('info@casidh.com.ar', 'CASI DH'); // Correo destinatario
+        $mail->setFrom('******', 'CASI DH'); // Usa el correo del usuario como remitente
+        $mail->addAddress('******', 'CASI DH'); // Correo destinatario
 
         // Contenido del correo
         $mail->isHTML(true);
